@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 const Profile = () => {
@@ -17,15 +17,15 @@ function App() {
       <div className="row">
         <div className="col-md-3">
           <div className="nav flex-column nav-pills">
-            <a href="profile" className="nav-link active">
+            <NavLink to="profile" className="nav-link">
               Профиль
-            </a>
-            <a href="messages" className="nav-link">
+            </NavLink>
+            <NavLink to="messages" className="nav-link">
               Сообщения
-            </a>
-            <a href="settings" className="nav-link">
+            </NavLink>
+            <NavLink to="settings" className="nav-link">
               Настройки
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className="col-md-9">
