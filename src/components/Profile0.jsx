@@ -2,13 +2,12 @@ import styles from "./Profile.module.css"
 
 
 export const Profile = (props) => {
-
+ 
   const familyStyle = {
     color: "blue",
     fontSize: "1.2rem"
   }
-  let userId = window.location.pathname.split("/")[2];
-  let user = props.function(userId);
+  let user = props.function();
 
   return (
     <div className="row">
